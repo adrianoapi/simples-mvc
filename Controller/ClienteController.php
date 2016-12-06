@@ -3,14 +3,14 @@
 require_once 'Model/ClienteModel.php';
 $cliente = new ClienteModel();
 
-#Verifica se o formulário foi submetido
+#Verifica se o formulÃ¡rio foi submetido
 if (isset($_POST)) {
 
-    #Verifica o tipo de acção do formulário
+    #Verifica o tipo de acÃ§Ã£o do formulÃ¡rio
     if ($_POST['action'] == "cadastrar") {
-        $cliente->setNome($_POST['nome']);
-        $cliente->setEmail($_POST['email']);
-        $cliente->setSexo($_POST['sexo']);
+        $cliente->setNome(htmlentities($_POST['nome']));
+        $cliente->setEmail(htmlentities($_POST['email']));
+        $cliente->setSexo(htmlentities($_POST['sexo']));
 
         echo "<br>nome: {$cliente->getNome()}";
         echo "<br>e-mail: {$cliente->getEmail()}";
