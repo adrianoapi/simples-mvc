@@ -1,0 +1,28 @@
+legend{
+    font-size: 15px;
+    font-weight: bold;
+}
+fieldset{
+    width: 350px;
+}
+fieldset p{
+    clear: both;
+    padding: 5px;
+}
+label.field{
+    text-align: right;
+    width: 50px;
+    float: left;
+    font-weight: bold;
+}
+input.text-250{
+    width:250px;
+    float: right;
+}
+label.text-300{
+    width:250px;
+    float: right;
+}
+.sexo{
+    margin-left: 50px;
+}
