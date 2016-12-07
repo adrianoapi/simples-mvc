@@ -54,7 +54,7 @@ class ClienteModel
 
     public function delete()
     {
-        echo "Excuído com sucesso!";
+        echo "ExcuÃ­do com sucesso!";
     }
 
 }
